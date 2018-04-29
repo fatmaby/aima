@@ -1,0 +1,62 @@
+.required {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.error {
+  color: #CC1100 !important;
+}
+
+.required.error:after {
+  color: #CC1100;
+}
+
+.required:after {
+  content: '*';
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  bottom: 0;
+  color: rgba(0, 0, 0, .2);
+  font-size: 20px;
+}
+
+.note {
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 6px;
+}
+
+#forgot-psw {
+  color: rgba(0, 0, 0, 0.67);
+  margin-left: 12px;
+}
+
+#register-modal,
+#login-modal {
+  width: 340px;
+}
+
+.panel-h {
+  position: relative;
+  flex-direction: column;
+  height: 1vh; /* 1 */
+  padding-left: 150px;
+  width: 100%;
+  height: 150px;
+}
+
+.panel-h-picture {
+  top: 8px;
+  left: 8px;
+  bottom: 8px;
+  position: absolute;
+  width: 134px;
+}
+  
+.panel-h-content {
+  flex: 1 1 auto;
+  width: auto;
+  padding: 10px 15px;
+}
